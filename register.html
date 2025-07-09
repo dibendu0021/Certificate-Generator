@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="register.css">
+
+
+</head>
+
+<body>
+
+    <div class="con">
+        <div class="head">
+            <h3>CREATE YOUR CERTIFICATE</h3>
+            <p>Select a template enter some values and hit Create PDF to get your file</p>
+            <img src="logo3_26_15836.png" alt="">
+        </div>
+
+        <div class="temp">
+            <a href=""><img src="Screenshot (77).png" alt=""></a>
+            <a href=""><img src="Screenshot (78).png" alt=""></a>
+            <a href=""><img src="Screenshot (79).png" alt=""></a>
+            <a href=""><img src="Screenshot (80).png" alt=""></a>
+           
+        </div>
+
+    </div>
+    <div class="con2">
+        <div class="form"><br>
+            <form action="Certificate.html" onsubmit="return validation()">
+                <label for="" id="nam">NAME<span id="star">*</span></label>
+                <input type="text" name="fn" placeholder="Name Of The Awardee" id="fn" onkeypress="return a(event);"
+                    autofocus><br><br><br><br><br><br>
+                <label for="" id="tle"> SUBTITLE<span id="star">*</span></label>
+
+                <textarea name="sub" id="txt"
+                    placeholder="Appears under the name of the awardee"></textarea><br><br><br>
+                <label for="" id="date">DATE<span id="star">*</span></label>
+                <input type="date" id="dt" required><br><br>
+                <label for="" id="sign">SIGNATURE<span id="star">*</span></label>
+
+                <input type="text" placeholder="Name Of The Provider" id="sg" onkeypress="return b(event);"><br><br>
+                <input type="submit" value="Create PDF" id="sn">
+            </form>
+        </div>
+    </div>
+    <!-- onclick="window.location.href = 'Certificate.html';" -->
+    <script>
+
+
+        var user = document.getElementById("fn");
+        var err = document.getElementById("nam");
+        var letter = /^[a-zA-Z]*$/;
+        var sub = document.getElementById("txt");
+        var sign = document.getElementById("sg");
+        var sig = /^[a-zA-Z]*$/;
+        function validation() {
+            if (user.value == '') {
+                alert("username name must be filled.....");
+                // err.innerHTML = "username name must be filled";
+                // err.style.display = "bottom";
+                return false;
+            }
+
+            else if (user.value.length > 50) {
+                alert("username contains less than 50 character");
+                // err.innerHTML = "user name greater than 40 character";
+                // err.style.display = "block";
+                return false;
+            }
+            // // else if (user.value.match(letter))
+            // else if (!((/^[a-zA-Z]=$/.test(user)) || user.length == 0 )) {
+            //     alert("username name must contain only alphabet");
+            // }
+            //     return false;
+            // function removeNonLetters(user) {
+            //     return user.replace(/[^a-zA-Z," "]/gi);
+
+            // }
+
+
+            if (sub.value == '') {
+                alert("Subtitle  must be filled .....");
+                // err.innerHTML = "username name must be filled";
+                // err.style.display = "bottom";
+                return false;
+            }
+
+            // else if (user.value.length > 50) {
+            //        alert("username name less tha 50 character");
+            //     // err.innerHTML = "user name greater than 40 character";
+            //     // err.style.display = "block";
+            //     return false;
+            // }
+            // else if (sub.value.match(letter)) {
+            //     alert("Subtitle  must contain only alphabet");
+
+            //     return false;
+            // }
+
+            if (sign.value == '') {
+                alert("Signature must be filled.....");
+                // err.innerHTML = "username name must be filled";
+                // err.style.display = "bottom";
+                return false;
+            }
+
+            else if (sign.value.length > 50) {
+                alert("Signature less than 50 character");
+                return false;
+                // err.innerHTML = "user name greater than 40 character";
+                // err.style.display = "block";
+
+            }
+            // else if (sign.value.match(sig)) {
+            //     alert("Signature must contain only alphabet");
+
+            //     return false;
+            // }
+            else if (user.value === sign.value) {
+                alert("Name and Signature  both are not equal");
+                return false
+            }
+
+
+            return true
+        }
+        function a(event) {
+            var char = event.which;
+            if (char > 31 && char != 32 && (char < 65 || char > 90) && (char < 97 || char > 122)) {
+
+                return false
+            }
+            return true
+        }
+        function b(event) {
+            var char = event.which;
+            if (char > 31 && char != 32 && (char < 65 || char > 90) && (char < 97 || char > 122)) {
+
+                return false
+            }
+            return true
+        }
+
+    </script>
+
+
+
+</body>
+
+
+</html>

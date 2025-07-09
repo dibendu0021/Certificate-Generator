@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+.header{
+    width: 100%;
+    height: 100px;
+    background: rgb(37, 4, 75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: calc(10% - 50px);
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: -190%;
+    bottom: -4px;
+
+
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px; 
+    padding-right: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: WHITE;
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+
+
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(230, 106, 255);
+}
+.title h1{
+    width: 200px;
+    height: auto;
+    font-size: 23px;
+    position: absolute;
+    left: 14%;
+    top: 38px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.banner{
+    width: 100%;
+    height: 40%;
+}
+.container h2{
+    font-weight: bold;
+    color: rgb(71, 4, 85);
+    position: absolute;
+    top: 128px;
+    left: 80px;
+    text-align: left;
+    align-items: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+.container p{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 39%;
+    left: 6.8%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+
+}
+.container h6{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 34%;
+    left: 7%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+.contact p{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 39%;
+    left: 35%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.contact h5{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 34%;
+    left: 35%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.teachers{
+    width: 100%;
+    margin-bottom: 9%;
+}
+.card{
+    flex-basis: 29%;
+    height: 320px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 #000;
+
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -38px;
+    left: calc(50% - 50px);
+
+
+}
+
+.card h3{
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 25px;
+    font-family:  'Poppins', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+
+}
+
+.card p{
+    margin-bottom: 1px;
+    padding: 2px 3px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    font-family:  'Poppins', sans-serif;
+
+}
+.card h4{
+    margin-bottom: 1px;
+    padding: 2px 3px;
+    text-align: center;
+    position: relative;
+    color: rgb(48, 46, 46);
+    top: -10px;
+    font-size: 17px;
+    font-family:  'Poppins', sans-serif;
+
+}
+
+.bnt{
+    width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.black{
+    width: 100%;
+    height: 100px;
+    margin-top: 45px;
+    margin-bottom: 98px;
+}
+.black h1{
+    text-align: center;
+    padding-bottom: 8px;
+    font-family:  'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+.black p{
+    text-align: center;
+    font-size: 15px;
+    font-family:  'Poppins', sans-serif;
+}
+.footer{
+    width: 100%;
+    height:60%;
+    display: flex;
+    justify-content: center;
+    background: rgb(61, 38, 99);
+    padding-top: 180px;
+    padding-bottom: 190px;
+    position: relative;
+
+
+}
+hr{
+    color: #f9ca24;
+    width: 100%;
+    border-top: 10px solid rgb(205, 50, 179);
+}
+
+
+.bar{
+    width: 100%;
+    height: 34px;
+    background:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tittle h3{
+    color: rgb(205, 50, 179);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    left: 190px;
+    bottom: 20px;
+}
+.at p{
+    color:rgb(205, 50, 179);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: oblique;
+    right: 220px;
+    margin-bottom: 2px;
+}
+button{
+    background-color: rgb(205, 50, 179);
+    color: #000;
+    width: 60px;
+    font-weight: bold;
+    border-radius: 3px;
+    position: relative;
+    bottom: 4%;
+    right: 110px;
+    height: 20px;
+    margin-top: 2px;
+
+
+}
+input{
+    width: 190px;
+    padding-left: 4px;
+    position: relative;
+    left: 80px;
+    bottom: 2%;
+    border-radius: 2px;
+}
+.wr p{
+    position: relative;
+    color:white;
+    font-size: 13px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    right: 70px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+.abt{
+    padding-left: 20px;
+    width: 300px;
+}
+.abt h1{
+    color: azure;
+    margin-bottom: 23px;
+    position: relative;
+    bottom: 40px ;
+    left: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+.abt p{
+    color: white;
+    position: relative;
+    bottom: 50px ;
+    left: 80px;
+    font-family:'Poppins', sans-serif;
+
+}
+.abt ul li{
+     color: white;
+     list-style-type: none;
+     position: relative;
+     left: 80px;
+    bottom: 50px ;
+    font-family: 'Poppins', sans-serif;
+}
+.copy{
+    width: 100%;
+    position: relative;
+    top: 180px;
+    right: 70%;
+}
+.copy p{
+    color: rgb(193, 195, 197);
+    font-size: 12px;
+    position: relative;
+    top: -70px;
+    right: 70%;
+    font-family: 'Poppins', sans-serif;
+}
+.abt i{
+    color: aliceblue;
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+}
+.ftr{
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tittle img {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    position: relative;
+    top: 12px;
+    left: calc(235% - 50px);
+}
